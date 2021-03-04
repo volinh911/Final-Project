@@ -259,6 +259,8 @@ html {
 
 .intro .container .text{
     margin-left: 50px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 footer{
