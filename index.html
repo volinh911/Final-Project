@@ -12,7 +12,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-        
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <title>Final Project</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="#">
@@ -106,51 +108,110 @@
             </div>
         </section>
 
-        <section class="intro my-5">
+        <section class="summary">
             <div class="container">
-                <div class="bar">
-                    <svg>
-                        <circle cx="50%" cy="50%" r="50%"></circle>
-                    </svg>
-                    <h1>90%</h1>
-                </div>
-                <div class="text">
-                    <p>of students who use Letters report higher grades.</p>
+                <div class="row">
+                    <div class="col-3 box">
+                        <img src="images/90per2.png" class="img-fluids" alt="">
+                    </div>
+                    <div class="col-9 align-self-center">
+                        <p>of students who use <span>Letters</span> report higher grades.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="sec-intro my-5">
+        <section class="intro">
             <div class="container">
-                <div class="row content1 my-5">
-                    <div class="col text">
+                <div class="row content1" data-aos="fade-right">
+                    <div class="col text align-self-center">
                         <h5>You bring the brains, we’ll bring everything else</h5>
                         <p>By playing, you can learn francais, handle on history, just only one tool to conquer any challenge.</p>
                     </div>
                     <div class="col image">
-                        <img src="images/4.png" alt="">
+                        <img src="images/4.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="row content2 my-5">
+                <div class="row content2" data-aos="fade-left">
                     <div class="col image">
-                        <img src="images/5.png" alt="">
+                        <img src="images/5.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col text">
-                        <h5>You bring the brains, we’ll bring everything else</h5>
-                        <p>By playing, you can learn francais, handle on history, just only one tool to conquer any challenge.</p>
+                    <div class="col text align-self-center">
+                        <h5>Your next win is just a fact away</h5>
+                        <p>Each new thing you learn is an achievement. Letters brings various topics and subjects, so you accomplish something new every step of the way.</p>
                     </div>
                 </div>
-                <div class="row content3 my-5">
-                    <div class="col text">
-                        <h5>You bring the brains, we’ll bring everything else</h5>
-                        <p>By playing, you can learn francais, handle on history, just only one tool to conquer any challenge.</p>
+                <div class="row content3" data-aos="fade-right">
+                    <div class="col text align-self-center">
+                        <h5>Don’t get frustrated. Get it done.</h5>
+                        <p>When even the smallest lessons feel like a victory, it’s easy to keep going.</p>
                     </div>
                     <div class="col image">
-                        <img src="images/6.png" alt="">
+                        <img src="images/6.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="areas my-5">
+            <div class="container">
+                <h2>Let's give it a try</h2>
+                <div class="row my-5">
+                    <div class="col-sm">
+                        <img src="images/language.jpeg" class="img-fluid image__img" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Languages
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/science.jpg" class="img-fluid" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Science
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/arts&hunamities.jpg" class="img-fluid" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Arts and Humanities
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-sm">
+                        <img src="images/maths.webp" class="img-fluid" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Maths
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/socialscience.jpg" class="img-fluid" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Social Science
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/other.webp" class="img-fluid" alt="">
+                        <div class="image-overlay">
+                            <div class="image-title">
+                                Other
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
 
         <!-- Footer -->
         <footer class="text-center text-white">
@@ -338,7 +399,17 @@
             </div>
             <!-- Copyright -->
         </footer>
-  <!-- Footer -->
+        <!-- Footer -->
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+            });
+        </script>
         
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
