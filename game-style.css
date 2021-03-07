@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #20bf6b;
+}
+
+h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 15vh;
+    text-shadow: 0px 1px 0 #efefef, 0px 4px 0 #efefef, 0px 30px 5px rgba(0, 0, 0, .1);
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #dff9fb;
+    color: #000;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: #2f3542;
+    text-decoration: none;
+    color: #eb4d4b;
+}
+
+button.btn {
+    font-weight: 600;
+    letter-spacing: 0.12rem;
+    word-spacing: 0.19rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: #2f3542;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    background: #2f3542;
+    color: #dff9fb;
+}
+
+.main-box {
+    height: 85vh;
+    background-color: #7bed9f;
+}
+
+.stats-box {
+    height: 50px;
+}
+
+.stats-box h2 {
+    letter-spacing: 0.2rem;
+}
+
+.stats-box button#restart {
+    margin-right: 0px;
+    margin-left: auto;
+    padding: 8px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-box {
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #2ed573;
+    flex-direction: column;
+    box-shadow: 0px 8px 6px -6px black;
+}
+
+.msg {
+    text-align: center;
+    font-size: 1.5rem;
+}
