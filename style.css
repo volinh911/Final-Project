@@ -426,6 +426,31 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
     color: #45e19f;
 }
 
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.team .card::nth-child(1){
+    animation: fadeIn .5s .5s backwards;
+}
+.team .card::nth-child(2){
+    animation: fadeIn .5s 1s backwards;
+}
+.team .card::nth-child(3){
+    animation: fadeIn .5s 1.5s backwards;
+}
+.team .card::nth-child(4){
+    animation: fadeIn .5s 2s backwards;
+} 
+
+.team .card:hover{
+    transform: scale(1.05);
+}
+
 .get-app{
     padding: 5rem 0;
 }
