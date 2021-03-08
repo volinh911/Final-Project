@@ -62,6 +62,7 @@ html {
 
 /*end of header*/
 
+/*section welcome*/
 .welcome{
     height: 100vh;
     display: flex;
@@ -131,7 +132,6 @@ html {
 #radio3:checked ~ .first{
     margin-left: -40%;
 }
-
 /*automatic nav*/
 
 .welcome .navigation-auto{
@@ -192,6 +192,7 @@ html {
     background: #28a7a7;
 }
 
+/*section summary*/
 .summary p{
     font-size: 1.8rem;
     font-weight: 600;
@@ -218,6 +219,7 @@ html {
                 0 0 160px #f5c484;
 }
 
+/*section intro*/
 .intro {
     padding-top: 50px;
 }
@@ -247,6 +249,7 @@ html {
     font-size: 1.3rem;
 }
 
+/*section team*/
 .areas {
     padding-top: 50px;
     text-align: center;
@@ -301,6 +304,7 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
     object-fit: cover;
 }
 
+/*section team*/
 .team{
     padding: 5rem 0;
     background-color: #fff;
@@ -349,7 +353,7 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
 }
 
 .team .card h1{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     color: #333;
@@ -364,7 +368,7 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
 }
 
 .team .about{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 1rem 0;
     font-style: italic;
     text-align: center;
@@ -451,6 +455,7 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
     transform: scale(1.05);
 }
 
+/*section app*/
 .get-app{
     padding: 5rem 0;
 }
@@ -493,4 +498,9 @@ body > section.areas.my-5 > div > div:nth-child(n) > div:nth-child(n) > img {
 
 footer{
     background: #4257b2;
+}
+
+/*responsive web*/
+@media screen and (max-width: 950px) {
+    
 }
