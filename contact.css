@@ -1,50 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
-
-body, html{
+header, body, html{
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: 'Sniglet', cursive !important;
+}
+
+.bd-grid{
+	background-color: #4257b2;
+	margin: 0!important;
+	max-width: 100%;
+	width: 100%;
+}
+
+.nav__logo{
+	margin-left: 100px;
+}
+
+.nav__list{
+	margin-right: 100px;
 }
 
 h1{
 	font-weight: normal;
-	font-size: 3em;
+	font-size: 4em;
 	font-family: 'Raleway', sans-serif !important;
 	margin: 0 auto;
-	margin-top: vh !important;
-	width: 500px;
+	margin-top: 3vh !important;
+	width: 100%;
 	color: #F90;
 	text-align: center;
-
-}
-
-nav ul {
-    align-items: center;
-}
-
-.navbar {
-    background-color: #4257b2;
-    padding: 0.5rem 1rem;
-    z-index: 1000;
-}
-
-.navbar .navbar-brand {
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-#navbarSupportedContent > ul > li:nth-child(n) > a {
-    color: #c0daf3;
-    font-size: 0.8rem;
-    padding: 0 0.8rem;
-    font-weight: 600;
-}
-
-#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
-#navbarSupportedContent > ul > li:nth-child(n) > a:active {
-    color: #fff;
 }
 
 /* Animation webkit */
@@ -87,9 +75,8 @@ nav ul {
 	-webkit-animation-delay: 12s;
 }
 
-
 header{
-	height: 160px;
+	height: 25%;
 	background: url('./contactimg/golf.png') repeat-x bottom;
 }
 
@@ -98,15 +85,23 @@ header{
 	background-color: #98d4f3;
 	overflow: hidden;
 	position: relative;
-	
+	max-width: 100%;
 }
 
 form{
 	margin: 0 auto;
-	width: 500px;
+	width: 100%;
 	padding-top: 40px;
 	color: white;
 	position: relative;
+}
+
+#waterform{
+	align-items: center;
+    justify-content: center;
+	position: relative;
+	max-width: 40%;
+	width: 30%;
 }
 
 label, input, textarea{
@@ -114,12 +109,12 @@ label, input, textarea{
 }
 
 input, textarea{
-	width: 500px;	
+	width: 100%;	
 	border: none;
 	border-radius: 20px;
 	outline: none;
 	padding: 10px;
-	font-family: 'Sniglet', cursive;
+	font-family: 'Sniglet', cursive !important;
 	font-size: 1em;
 	color: #676767;
 	transition: border 0.5s;
@@ -143,7 +138,7 @@ textarea{
 }
 
 input, textarea{
-	width: 500px;	
+	width: 100%;	
 	border: none;
 	border-radius: 20px;
 	outline: none;
@@ -171,6 +166,7 @@ textarea{
 	resize: none; 
 	overflow: auto;
 }
+
 input[type="submit"]{
 	background-color: #F90;
 	color: white;
@@ -184,10 +180,12 @@ input[type="submit"]{
 	-o-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
+
 input[type="submit"]:hover{
 	background-color: #e58f0e;
 	
 }
+
 label{
 	font-size: 1.5em;
 	margin-top: 20px;
@@ -195,22 +193,28 @@ label{
 }
 
 @media screen and (max-aspect-ratio: 5/4) {
-	body, html{
-		height: 90%;
-  }
+	#waterform{
+		max-width: 60%;
+		width: 50%;
+	}
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-	body, html{
-		height: 80%;
+	#waterform{
+		max-width: 70%;
+		width: 60%;
+	}
+	.nav__logo{
+		margin: 30px;
 	}
 }
 
 @media screen and (max-aspect-ratio: 9/16) {
-	body, html{
-		height: 70%;
+	#waterform{
+		max-width: 80%;
+		width: 70%;
 	}
-	footer{
-		height: 80%;
+	.nav__logo{
+		margin: 30px;
 	}
 }
