@@ -1,5 +1,7 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,116 +32,116 @@
   <link rel="shortcut icon" href="main-images/favicon_io/favicon.ico">
 
 </head>
+
 <body>
 
 
-<header>
+  <header>
 
     <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav__logo">Letters</a>
-        </div>
-        
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
+      <div>
+        <a href="#" class="nav__logo">Letters</a>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
         </div>
 
-        <div class="nav__menu" id="nav-menu">
-            <div class="nav__close" id="nav-close">
-                <i class='bx bx-x'></i>
-            </div>
-
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Game</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Dictionary</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Game</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Dictionary</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
+  </header>
+
+  <div id="form">
+
     <h1>Contact us</h1>
 
-</header>
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+    <form action="./index.html" id="waterform" method="post">
 
+      <div class="formgroup" id="name-form">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" />
+      </div>
 
+      <div class="formgroup" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+      </div>
 
-<div id="form">
+      <div class="formgroup" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <input type="submit" value="Send your message!" />
+    </form>
+  </div>
 
-<div class="fish" id="fish"></div>
-<div class="fish" id="fish2"></div>
-<form action="./index.html" id="waterform" method="post">
-
-<div class="formgroup" id="name-form">
-    <label for="name">Your name</label>
-    <input type="text" id="name" name="name" />
-</div>
-
-<div class="formgroup" id="email-form">
-    <label for="email">Your e-mail*</label>
-    <input type="email" id="email" name="email" />
-</div>
-
-<div class="formgroup" id="message-form">
-    <label for="message">Your message</label>
-    <textarea id="message" name="message"></textarea>
-</div>
-<input type="submit" value="Send your message!" />
-</form>
-</div>
-
-<!-- Footer -->
-<footer class="page-footer font-small primary-color-dark pt-4">
+  <!-- Footer -->
+  <footer class="page-footer font-small primary-color-dark pt-4">
 
     <!-- Footer Elements -->
     <div class="container">
 
-    <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center mb-3">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                    <i class="fab fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                    <i class="fab fa-google-plus-g"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                    <i class="fab fa-linkedin-in"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                    <i class="fab fa-instagram"> </i>
-                </a>
-            </li>
-        </ul>
-    <!-- Social buttons -->
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center mb-3">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
 
     </div>
     <!-- Footer Elements -->
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2021 Copyright:
-        <a href="#"> Letters</a>
+      <a href="#"> Letters</a>
     </div>
     <!-- Copyright -->
 
-</footer>
-<!-- Footer -->
+  </footer>
+  <!-- Footer -->
 
-<!--===== GSAP =====-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!--===== GSAP =====-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
-<!-- Scripts -->
-  <script  src="./contact.js"></script>
+  <!-- Scripts -->
+  <script src="./contact.js"></script>
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -152,4 +154,5 @@
   <script type="text/javascript" src="./main.js"></script>
 
 </body>
+
 </html>

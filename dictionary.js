@@ -6,64 +6,64 @@ let defBox = document.querySelector('.def');
 let audioBox = document.querySelector(".audio");
 let loading = document.querySelector('.loading');
 searchBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-     audioBox.innerHTML = "";
-     notFound.innerText = "";
-     defBox.innerText = "";
-    //get input data
-    let word = input.value;
-    //call API get data
-    if (word==='') {
-        alert('Word is required');
-        return;
-    }
-    getData(word);
+  e.preventDefault();
+  audioBox.innerHTML = "";
+  notFound.innerText = "";
+  defBox.innerText = "";
+  //get input data
+  let word = input.value;
+  //call API get data
+  if (word === '') {
+    alert('Word is required');
+    return;
+  }
+  getData(word);
 })
 
 async function getData(word) {
-    loading.style.display = "block";
-    //Ajax call
-    const response = await fetch(
-      `https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`
-    );
-    const data = await response.json();
-    // console.log(data);
+  loading.style.display = "block";
+  //Ajax call
+  const response = await fetch(
+    `https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`
+  );
+  const data = await response.json();
+  // console.log(data);
 
-    //if not have result
-    if (!data.length) {
-        loading.style.display = 'none';
-        notFound.innerHTML = '<h5>No Result Found</h5>';
-        return;
-    }
+  //if not have result
+  if (!data.length) {
+    loading.style.display = 'none';
+    notFound.innerHTML = '<h5>No Result Found</h5>';
+    return;
+  }
 
-    //result is suggestion
-    if (typeof data[0] === 'string') {
-        loading.style.display = 'none';
-        let heading = document.createElement('h5');
-        heading.innerHTML = "<h5>Did you mean ?</h5>";
-        notFound.appendChild(heading);
-        data.forEach(element => {
-            let suggestion = document.createElement('span');
-            suggestion.classList.add('suggested');
-            suggestion.innerHTML = element;
-             notFound.appendChild(suggestion);
+  //result is suggestion
+  if (typeof data[0] === 'string') {
+    loading.style.display = 'none';
+    let heading = document.createElement('h5');
+    heading.innerHTML = "<h5>Did you mean ?</h5>";
+    notFound.appendChild(heading);
+    data.forEach(element => {
+      let suggestion = document.createElement('span');
+      suggestion.classList.add('suggested');
+      suggestion.innerHTML = element;
+      notFound.appendChild(suggestion);
 
-        });
-        return;
-    }
+    });
+    return;
+  }
 
-    //Result Found
-    loading.style.display = "none";
-    let definition = data[0].shortdef[0];
-    defBox.innerHTML = definition;
+  //Result Found
+  loading.style.display = "none";
+  let definition = data[0].shortdef[0];
+  defBox.innerHTML = definition;
 
-    //Sound
-    let soundName = data[0].hwi.prs[0].sound.audio;
-    if (soundName) {
-        renderSound(soundName);
+  //Sound
+  let soundName = data[0].hwi.prs[0].sound.audio;
+  if (soundName) {
+    renderSound(soundName);
 
-    }
-    // console.log(data);
+  }
+  // console.log(data);
 }
 
 function renderSound(soundName) {
@@ -76,4 +76,3 @@ function renderSound(soundName) {
   aud.controls = true;
   audioBox.appendChild(aud);
 }
-
