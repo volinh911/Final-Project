@@ -149,6 +149,10 @@ header {
   text-align: center;
 }
 
+.container{
+  margin-top: 60vh;
+}
+
 .container h1 {
   margin-top: 30vh;
 }
