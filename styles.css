@@ -116,6 +116,10 @@ img {
   color: #fff;
 }
 
+.nav__logo:hover{
+  color: var(--first-color);
+}
+
 .nav__close, .nav__link, .nav__toggle {
   color: var(--first-color);
 }
