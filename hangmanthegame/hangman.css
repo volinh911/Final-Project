@@ -1,3 +1,7 @@
 body{
     background: url("./static/media/background.a75be8e6.jpeg");
 }
+
+#root{
+    padding-bottom: 5rem;
+}
