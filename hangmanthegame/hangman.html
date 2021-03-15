@@ -1,23 +1,16 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="./favicon.ico" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="apple-touch-icon" href="./logo192.png" />
-  <link rel="manifest" href="./manifest.json" />
-  <title>HangMan Game</title>
-  <link href="./static/css/main.33397133.chunk.css" rel="stylesheet">
-
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- =====BOX ICONS===== -->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+  
   <!--Progress bar-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Google Fonts -->
@@ -26,45 +19,55 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
+  
   <!--using FontAwesome--------------->
   <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-  <title>Contact Us</title>
-
+  
+  <!-- ===== CSS ===== -->
+  <link rel="shortcut icon" href="main-images/favicon_io/favicon.ico">
+  
+  <title>HangMan Game</title>
+  
+  <link href="./static/css/main.33397133.chunk.css" rel="stylesheet">
   <link rel="stylesheet" href="./hangman.css">
+  <link rel="manifest" href="./manifest.json" />
   <link rel="shortcut icon" href="main-images/favicon_io/favicon.ico">
 
 </head>
 
 <body>
 
-  <header>
-
-    <nav class="nav bd-grid">
+<!--===== HEADER =====-->
+<header class="l-header">
+  <nav class="nav bd-grid">
       <div>
-        <a href="#" class="nav__logo">Letters</a>
+          <a href="#" class="nav__logo">Letters</a>
       </div>
-
+      
       <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
+          <i class='bx bx-menu'></i>
       </div>
 
       <div class="nav__menu" id="nav-menu">
-        <div class="nav__close" id="nav-close">
-          <i class='bx bx-x'></i>
-        </div>
+          <div class="nav__close" id="nav-close">
+              <i class='bx bx-x'></i>
+          </div>
 
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Game</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Dictionary</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Scrambles</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">HangMan</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Dictionary</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
       </div>
-    </nav>
-  </header>
+  </nav>
+</header>
+
+<section class="empty">
+
+</section>
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
@@ -187,9 +190,7 @@
   <div>
     <p>hint: it's in english</p>
   </div>
-  <!-- <div class="hint-hangman">
-    <p>Hint: It's in English</p>
-  </div> -->
+
   <!--===== GSAP =====-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
