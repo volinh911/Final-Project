@@ -56,6 +56,11 @@ img {
   height: auto;
 }
 
+.btn{
+  border-radius: 20px;
+  padding: 1.125rem 2rem;
+}
+
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -179,16 +184,14 @@ img {
   margin-bottom: 2.5rem;
 }
 
-.home__button {
+.home__data a {
   display: inline-block;
   background-color: #ffdc62;
   color: var(--first-color-darken);
-  padding: 1.125rem 2rem;
-  border-radius: .5rem;
 }
 
-.home__button:hover {
-  background-color: #f5ab4c;
+.home__data a i{
+  padding-right: 8px;
 }
 
 /* ===== SUMMARY =====*/
@@ -586,12 +589,17 @@ body>section.areas.my-5>div>div:nth-child(n)>div:nth-child(n)>img {
   position: relative;
   text-align: center;
   max-width: 800px;
+  line-height: 5rem;
 }
 
 .slider .imgBx .end-content h2 {
   font-size: 6em;
   line-height: 1em;
   color: #fff;
+}
+
+.slider .imgBx .end-content a i{
+  padding-right: 8px;
 }
 
 .slider .imgBx .end-content p {
