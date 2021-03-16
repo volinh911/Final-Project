@@ -703,20 +703,36 @@ footer i {
 @media (max-width: 753px) {
   .wrapper {
     max-width: 700px;
+    padding-left: 20px;
+  }
+
+  .wrapper .text {
+    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
   }
 
   .wrapper .percent {
     width: calc(50% - 20px);
     margin-bottom: 20px;
+    padding-left: 80px;
   }
 }
 
 @media (max-width: 505px) {
   .wrapper {
+    padding-left: 20px;
     max-width: 500px;
+  }
+
+  .wrapper .text {
+    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
   }
 
   .wrapper .percent {
     width: 100%;
+    padding-left: 80px;
   }
 }
