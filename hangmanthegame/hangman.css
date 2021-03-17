@@ -5,3 +5,8 @@ body{
 #root{
     padding-bottom: 5rem;
 }
+
+/*FOOTER*/
+footer i {
+    font-size: 30px;
+  }
