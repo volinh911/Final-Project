@@ -19,7 +19,11 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 15px;
     line-height: 15vh;
-    text-shadow: 0px 1px 0 #efefef, 0px 4px 0 #efefef, 0px 30px 5px rgba(0, 0, 0, .1);
+    text-shadow: 10px 10px 3px #2b3d8b, 0px 4px 0 #2b3d8b, 0px 10px 3px rgb(0 0 0 / 10%)
+}
+
+h2 {
+    font-weight: 500 !important;
 }
 
 h3 {
@@ -37,7 +41,7 @@ input {
     background-color: #dff9fb;
     color: #000;
     margin: 2rem 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem !important;
 }
 
 button {
@@ -50,10 +54,11 @@ button {
 }
 
 button.btn {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.4rem;
     letter-spacing: 0.12rem;
     word-spacing: 0.19rem;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2.5rem;
     background: white;
     color: #2f3542;
     text-transform: uppercase;
@@ -62,9 +67,7 @@ button.btn {
     transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
 }
 
-button.btn:hover,
-button.btn:focus,
-button.btn:active {
+button.btn:hover {
     letter-spacing: 0.2rem;
     word-spacing: 0.3rem;
     background: #2f3542;
@@ -73,11 +76,15 @@ button.btn:active {
 
 .main-box {
     height: 85vh;
-    background-color: #7bed9f;
+    /* background: url(./main-images/suspence.jpg);
+    background-repeat: repeat;
+    background-position: top; */
+    background-color: #9caaeb;
 }
 
 .stats-box {
     height: fit-content;
+    margin-top: 142.64px;
 }
 
 .stats-box h2 {
@@ -110,9 +117,15 @@ button.btn:active {
     margin-top: 50px;
     padding: 20px 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #2ed573;
+    background-color: #4257b2ab;
     flex-direction: column;
-    box-shadow: 0px 8px 6px -6px black;
+    box-shadow: 0px 8px 6px -6px #18255a;
+}
+
+h1#title {
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 32px;
 }
 
 .mode-btn {
@@ -122,4 +135,36 @@ button.btn:active {
 .msg {
     text-align: center;
     font-size: 3.5rem;
+}
+
+.score h2 {
+    margin-bottom: 0px;
+}
+
+.score {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .gm.d-flex.flex-col {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+    .stats-box.d-flex {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .stats-box .score {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-aspect-ratio: 9/13) {
+    h1#title {
+        font-size: 3rem;
+        letter-spacing: 20px;
+    }
 }
