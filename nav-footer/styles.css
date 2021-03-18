@@ -169,7 +169,10 @@ img {
   }
 }
 
-
+.empty{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 /*FOOTER*/
 footer i {
