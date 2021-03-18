@@ -317,7 +317,7 @@ img {
 
 .card:hover {
   transform: translateY(20px);
-  background: linear-gradient(to bottom, transparent 80%, #e48305 50%);
+  background: linear-gradient(to bottom, transparent 80%, #f5c484 50%);
 }
 
 /* ===== AREAS SECTION =====*/
