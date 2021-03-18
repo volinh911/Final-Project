@@ -74,8 +74,12 @@ button.btn:hover {
     color: #dff9fb;
 }
 
+.l-header {
+    height: 170px;
+}
+
 .main-box {
-    height: 85vh;
+    height: 74.7vh;
     /* background: url(./main-images/suspence.jpg);
     background-repeat: repeat;
     background-position: top; */
@@ -84,7 +88,7 @@ button.btn:hover {
 
 .stats-box {
     height: fit-content;
-    margin-top: 142.64px;
+    margin-top: 170px;
 }
 
 .stats-box h2 {
@@ -113,7 +117,7 @@ button.btn:hover {
 
 .game-box {
     width: 75%;
-    height: 400px;
+    height: 500px;
     margin-top: 50px;
     padding: 20px 0;
     font-family: 'Source Sans Pro', sans-serif;

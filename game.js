@@ -365,7 +365,7 @@ function cringe() {
         'newt',
         'hackneyed',
         'curmudgeon',
-        'infinitesimal',
+        'infinitestimal',
         'desultory',
         'assiduous',
         'ebullient',
