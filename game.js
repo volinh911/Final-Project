@@ -416,81 +416,78 @@ function cringe() {
     ];
 }
 ///////////////////////////////////////////////////////////////////////
-const msg = document.querySelector('.msg');
-const guess = document.querySelector('input');
-const mainbtn = document.querySelector('.btn#main-btn');
-const rst = document.querySelector('.btn#restart');
-const noti = document.querySelector('.notifier');
+
+var msg = document.querySelector('.msg-box');
+var guess = document.querySelector('input');
+var mainbtn = document.querySelector('.btn#main-btn');
+var rst = document.querySelector('.btn#restart');
+var noti = document.querySelector('.notifier');
 var scr = document.querySelector('#score');
+var spbtn = document.querySelector('#spaghetti');
+var mainbox = document.querySelector('#main-box');
 
 // ===================================
 
-const dif1 = document.querySelector(".mode-btn#simple");
-const dif2 = document.querySelector(".mode-btn#inter");
-const dif3 = document.querySelector(".mode-btn#advance");
-const dif4 = document.querySelector(".mode-btn#cringe");
+var dif1 = document.querySelector(".mode-btn#simple");
+var dif2 = document.querySelector(".mode-btn#inter");
+var dif3 = document.querySelector(".mode-btn#advance");
+var dif4 = document.querySelector(".mode-btn#cringe");
 
 // ===================================
+
+var state = 0; // 0 - #9caaeb || 1 - I'm in suspence || 2 - cake
+var state2 = 0;
 
 let points = 0;
 
-var mode = 0;
+var mode = "";
 var play = -1;
 var choosen_word = [];
 var scrambled_word = [];
-var bin = [];
 var index = -1;
 var arr_words = [];
 
 //Functions, functions, plenty o' functions
 
-const pickMode = (btn) => {
+var pickMode = (btn) => {
     switch (btn.innerHTML) {
         case "Simple":
             arr_words = simple();
+            updMsg("You chosed: Simple");
             break;
         case "Intermediate":
             arr_words = intermediate();
+            updMsg("You chosed: Intermediate");
             break;
         case "Advanced":
             arr_words = advanced();
+            updMsg("You chosed: Advanced");
             break;
         case "Cringe":
             arr_words = cringe();
+            updMsg("You chosed: Cringe");
             break;
         default:
             break;
     }
-    console.log(arr_words);
-    start("Click to begin");
+    reset();
+    mainbtn.innerHTML = "Click to begin";
 }
 
-const chooseWord = (type) => {
+var chooseWord = () => {
     let temp = [];
-    for (var i = 0; i < 10; i++) {
+    var i = 0;
+    while (i < 10) {
         let ran = Math.floor(Math.random() * arr_words.length);
-        if (!temp.includes(arr_words[ran]))
+        if (!temp.includes(arr_words[ran])) {
+            i++;
             temp.push(arr_words[ran])
+        }
     }
     return temp;
 }
 
-// const scrambler = (w_arr) => {
-//     for (let i = w_arr.length - 1; i > 0; i--) {
-//         let temp = w_arr[i];
-//         let j = Math.floor(Math.random() * (i + 1));
-
-//         w_arr[i] = w_arr[j];
-//         w_arr[j] = temp;
-//     }
-
-//     if (choosen_word == w_arr.join(""))
-//         return generateScrambles(w_arr);
-//     else
-//         return w_arr;
-// }
-
-const printStringFArr = (arr) => {
+var printStringFArr = (arr) => {
     let temp = "";
     arr.forEach(s => {
         temp += s + " ";
@@ -499,7 +496,7 @@ const printStringFArr = (arr) => {
     return temp;
 }
 
-const generateScramble = (w_arr) => {
+var generateScramble = (w_arr) => {
     for (let i = w_arr.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
 
@@ -514,96 +511,156 @@ const generateScramble = (w_arr) => {
         return w_arr;
 }
 
-const start = (start_msg) => {
-    play = false;
-    mainbtn.innerHTML = start_msg;
-    choosen_word = chooseWord();
-    index = 0;
-}
-
-const updateGame = () => {
-    guess.value = "";
-    if (index < 10) {
-        scrambled_word = generateScramble(choosen_word[index].split(""));
-        msg.innerHTML = printStringFArr(scrambled_word);
-        index++;
-    } else {
-        msg.innerHTML = "You score: " + points + "/10";
-        guess.classList.toggle("hidden");
-        start("Play Again ?");
-    }
-}
-
-const updateMsg = (str) => {
+function updMsg(str) {
     msg.innerHTML = str;
 }
 
-//Event Listeners
+// ====================================== MAIN FUNC ================================= \\
+
+var reset = () => {
+    points = 0;
+    play = false;
+    index = 0;
+}
+
+var start = (start_msg) => {
+    choosen_word = chooseWord();
+    mainbtn.innerHTML = start_msg;
+    reset();
+    scr.textContent = points;
+    play = true;
+}
+
+var updateGame = () => {
+    guess.value = "";
+    if (index < 10) {
+        console.log(index + ": " + choosen_word[index]);
+        scrambled_word = generateScramble(choosen_word[index].split(""));
+        updMsg(printStringFArr(scrambled_word));
+        index++;
+    } else {
+        console.log("Done");
+        updMsg("You score: " + points + "/10");
+        reset();
+        mainbtn.innerHTML = "Play Again ?";
+        guess.classList.toggle("hidden");
+    }
+}
+
+const gameController = () => {
+    if (!play) {
+        start("Guess");
+        console.log("_______ START GAME")
+            // mainbtn.innerHTML = "Guess";
+        guess.classList.toggle('hidden');
+        updateGame();
+    } else
+    if (play == true) {
+        let temp = guess.value;
+        if (temp == choosen_word[index - 1]) {
+            noti.innerHTML = "right.._____..";
+            setTimeout(() => {
+                fadeIn(noti);
+            }, 10);
+            setTimeout(() => {
+                fadeOut(noti);
+            }, 700);
+            points++;
+        } else {
+            noti.innerHTML = "Wrong :3";
+            setTimeout(() => {
+                fadeIn(noti);
+            }, 10);
+            setTimeout(() => {
+                fadeOut(noti);
+            }, 700);
+        }
+        scr.textContent = points;
+        updateGame();
+    }
+}
+
+// ====================================== EVENT LISTENERS ================================= \\
+
+$("#guess-field").on('keyup', function(e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+        console.log("Logged: ENTERED");
+        gameController();
+    }
+});
+
+mainbtn.addEventListener('click', function() {
+    console.log("Logged: CLICKED");
+    gameController();
+});
 
 guess.addEventListener('keyup', () => {
     let temp = scrambled_word.slice(0);
     var i = -1;
     Array.from(guess.value).forEach(c => {
         i = temp.indexOf(c);
-        console.log(c);
-        console.log(i);
         if (i != -1)
             delete temp[temp.indexOf(c)];
     });
-    console.log(temp);
-    updateMsg(printStringFArr(temp));
+    updMsg(printStringFArr(temp));
 });
 
-mainbtn.addEventListener('click', function() {
-    if (!play) {
-        play = true;
-        mainbtn.innerHTML = "Guess";
-        guess.classList.toggle('hidden');
-        updateGame();
-        console.log(scrambled_word);
-    } else
-    if (play == true) {
-        let temp = guess.value;
-        if (temp == choosen_word[index - 1]) {
-            points++;
-        } else {
-            setTimeout(() => {
-                fadeIn(noti);
-            }, 10);
-            setTimeout(() => {
-                fadeOut(noti);
-            }, 2000);
-        }
-        updateGame();
-        scr.textContent = points;
+spbtn.addEventListener('click', () => {
+    if (state == 2)
+        state = 0;
+    else
+        state++;
+
+    if (state2 > 0)
+        state2 = 0;
+    else
+        state2++;
+
+    mainbox.className = "";
+
+    switch (state) {
+        case 1:
+            mainbox.className += "spence";
+            break;
+        case 2:
+            mainbox.className += "cake";
+            break;
+        default:
+            mainbox.className += "main-box";
+            break;
     }
+
+    if (state2 == 1)
+        document.querySelector('#title').className = "rainbow_text_animated";
+    else
+        document.querySelector('#title').className = "";
 });
 
 dif1.addEventListener("click", () => {
-    if (mode == 0) {
+    if (play != true) {
         pickMode(dif1);
     }
 });
 
 dif2.addEventListener("click", () => {
-    if (mode == 0) {
+    if (play != true) {
         pickMode(dif2);
     }
 });
 
 dif3.addEventListener("click", () => {
-    if (mode == 0) {
+    if (play != true) {
         pickMode(dif3);
     }
 });
 
 dif4.addEventListener("click", () => {
-    if (mode == 0) {
+    if (play != true) {
         pickMode(dif4);
     }
 });
 
-//Helpers
+// ====================================== HELPERS ================================= \\
 
 function fadeOut(el) {
     el.style.opacity = "0";

@@ -74,16 +74,16 @@ button.btn:hover {
     color: #dff9fb;
 }
 
+body {
+    /* background: #9caaeb !important; */
+}
+
 .l-header {
     height: 170px;
 }
 
-.main-box {
+#main-box {
     height: 74.7vh;
-    /* background: url(./main-images/suspence.jpg);
-    background-repeat: repeat;
-    background-position: top; */
-    background-color: #9caaeb;
 }
 
 .stats-box {
@@ -111,6 +111,10 @@ button.btn:hover {
     padding: 8px !important;
 }
 
+.white-transparent {
+    background: #ffffffb8;
+}
+
 .hidden {
     display: none;
 }
@@ -121,9 +125,9 @@ button.btn:hover {
     margin-top: 50px;
     padding: 20px 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #4257b2ab;
+    background-color: #4257b2f6;
     flex-direction: column;
-    box-shadow: 0px 8px 6px -6px #18255a;
+    box-shadow: 0px 8px 6px -6px #380c46;
 }
 
 h1#title {
@@ -136,7 +140,7 @@ h1#title {
     border-radius: 0px !important;
 }
 
-.msg {
+.msg-box {
     text-align: center;
     font-size: 3.5rem;
 }
@@ -150,7 +154,63 @@ h1#title {
     font-weight: 800 !important;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+#spaghetti {
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+
+/* ====================================== BUNCH OF STUFFS ================================ */
+
+.main-box {
+    background: #9caaeb;
+}
+
+.spence {
+    background: url(./main-images/suspence.jpg);
+    background-repeat: repeat;
+    background-position: top;
+}
+
+.cake {
+    background: url(./main-images/cakeknight.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    text-shadow: 4px 4px 0px #0000002e, 10px 10px 3px rgb(0 0 0 / 11%);
+}
+
+@keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+
+/* ====================================================================== */
+
+@media screen and (max-aspect-ratio: 11/9) {
     .gm.d-flex.flex-col {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
@@ -170,5 +230,17 @@ h1#title {
     h1#title {
         font-size: 3rem;
         letter-spacing: 20px;
+    }
+    .l-header {
+        height: 130px;
+    }
+    .stats-box {
+        margin-top: 140px;
+    }
+    .game-box {
+        height: 700px;
+    }
+    #main-box {
+        height: 95vh;
     }
 }
