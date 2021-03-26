@@ -243,4 +243,15 @@ h1#title {
     #main-box {
         height: 95vh;
     }
+    .gm.d-flex.flex-col {
+        grid-template-columns: 1fr;
+    }
+    .game-box {
+        width: 100%;
+    }
+    h1#title {
+        font-weight: 400;
+        font-size: 3rem;
+        letter-spacing: 10px;
+    }
 }
