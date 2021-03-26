@@ -56,7 +56,7 @@ img {
   height: auto;
 }
 
-.btn{
+.btn {
   border-radius: 20px;
   padding: 1.125rem 2rem;
 }
@@ -121,7 +121,7 @@ img {
   color: #fff;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
   color: var(--first-color);
 }
 
@@ -130,7 +130,10 @@ img {
 }
 
 .nav__link:hover {
-  color: #fff;
+  color: #004e92;
+  border-radius: 5px;
+  background-color: #f5ab4c;
+  padding: 3px 7px;
 }
 
 .nav__toggle {
@@ -190,7 +193,7 @@ img {
   color: var(--first-color-darken);
 }
 
-.home__data a i{
+.home__data a i {
   padding-right: 8px;
 }
 
@@ -542,7 +545,6 @@ body>section.areas.my-5>div>div:nth-child(n)>div:nth-child(n)>img {
   margin-left: 20px;
 }
 
-
 /*END SECTION*/
 .slider {
   position: relative;
@@ -598,7 +600,7 @@ body>section.areas.my-5>div>div:nth-child(n)>div:nth-child(n)>img {
   color: #fff;
 }
 
-.slider .imgBx .end-content a i{
+.slider .imgBx .end-content a i {
   padding-right: 8px;
 }
 

@@ -1,395 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <!--Progress bar-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-        
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- =====BOX ICONS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <!--using FontAwesome--------------->
-        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--Progress bar-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-        <title>Letters</title>
-        <link rel="shortcut icon" href="main-images/favicon_io/favicon.ico">
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Letters</a>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+  <!--using FontAwesome--------------->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-                <div class="nav__menu" id="nav-menu">
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="styles.css">
 
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="game.html" class="nav__link">Scrambles</a></li>
-                        <li class="nav__item"><a href="hangmanthegame/hangman.html" class="nav__link">HangMan</a></li>
-                        <li class="nav__item"><a href="dictionary.html" class="nav__link">Dictionary</a></li>
-                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+  <title>Letters</title>
+  <link rel="shortcut icon" href="main-images/favicon_io/favicon.ico">
+</head>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <img src="main-images/img1.png" alt="" data-speed="-2" class="move">
-                        <img src="main-images/img2.png" alt="" data-speed="2" class="move">
-                        <img src="main-images/img3.png" alt="" data-speed="2" class="move">
-                        <img src="main-images/img4.png" alt="" data-speed="-2" class="move">
-                        <img src="main-images/img5.png" alt="" data-speed="-2" class="move">
-                    </div>
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Letters</a>
+      </div>
 
-                    <div class="home__data">
-                        <h1 class="home__title">Letters</h1>
-                        <p class="home__description">Master any word,<br>  one success at a time.</p>
-                        <!--<a href="#" class="home__button">Get Started</a>-->
-                        <a href="game.html" class="btn btn-warning play home__button"><i class="fas fa-play"></i>  Scrambles</a>
-                        <a href="hangmanthegame/hangman.html" class="btn btn-warning play home__button"><i class="fas fa-play"></i>  HangMan</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
 
-        <!--section summary-->
-        <section class="summary">
-            <div class="wrapper">
-                <div class="percent">
-                    <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
-                    </div>
-                </div>
-                
-                <div class="text">
-                    <p>of students who use <span>Letters</span> report higher grades.</p>
-                </div>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="game.html" class="nav__link">Scrambles</a></li>
+          <li class="nav__item"><a href="hangmanthegame/hangman.html" class="nav__link">HangMan</a></li>
+          <li class="nav__item"><a href="dictionary.html" class="nav__link">Dictionary</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+      <div class="home__container bd-grid">
+        <div class="home__img">
+          <img src="main-images/img1.png" alt="" data-speed="-2" class="move">
+          <img src="main-images/img2.png" alt="" data-speed="2" class="move">
+          <img src="main-images/img3.png" alt="" data-speed="2" class="move">
+          <img src="main-images/img4.png" alt="" data-speed="-2" class="move">
+          <img src="main-images/img5.png" alt="" data-speed="-2" class="move">
+        </div>
+
+        <div class="home__data">
+          <h1 class="home__title">Letters</h1>
+          <p class="home__description">Master any word,<br> one success at a time.</p>
+          <!--<a href="#" class="home__button">Get Started</a>-->
+          <a href="game.html" class="btn btn-warning play home__button"><i class="fas fa-play"></i> Scrambles</a>
+          <a href="hangmanthegame/hangman.html" class="btn btn-warning play home__button"><i class="fas fa-play"></i> HangMan</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--section summary-->
+  <section class="summary">
+    <div class="wrapper">
+      <div class="percent">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+      </div>
+
+      <div class="text">
+        <p>of students who use <span>Letters</span> report higher grades.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--section intro-->
+  <section class="intro">
+    <h5 class="heading container">Know Us More</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="main-images/4.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text text-center font-weight-bolder">You bring the brains, <br> we’ll bring everything else</p>
             </div>
-        </section>
-
-        <!--section intro-->
-        <section class="intro">
-            <h5 class="heading container">Know Us More</h5>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img class="card-img-top" src="main-images/4.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text text-center font-weight-bolder">You bring the brains, <br> we’ll bring everything else</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img class="card-img-top" src="main-images/5.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text text-center font-weight-bolder">Your next win is <br> just a fact away</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img class="card-img-top" src="main-images/6.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text text-center font-weight-bolder">Don’t get frustrated. <br> Get it done.</p>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="main-images/5.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text text-center font-weight-bolder">Your next win is <br> just a fact away</p>
             </div>
-        </section>
-
-        <!--section areas-->
-        <section class="areas">
-            <h5 class="heading container">Let's give it a try</h5>
-            <div class="container-fluid">
-                <div class="row my-5">
-                    <div class="col-sm">
-                        <img src="main-images/language.png" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Languages
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="main-images/science.jpg" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Science
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="main-images/arts&humanities.png" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Arts and Humanities
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col-sm">
-                        <img src="main-images/maths.jpg" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Maths
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="main-images/socialscience.jpg" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Social Science
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="main-images/other.png" class="img-fluid image__img" alt="">
-                        <div class="image-overlay">
-                            <div class="image-title">
-                                Other
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="main-images/6.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text text-center font-weight-bolder">Don’t get frustrated. <br> Get it done.</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!--section team-->
-        <section class="team"> 
-            <h5 class="heading container">Meet Our Team</h5>
-            <div class="our-team">
-                <!--box-1----------->
-                <div class="box">
-                    <!--top-bar---------------->
-                    <div class="top-bar"></div>
-                    <!--nav------------->
-                    <div class="nav">
-                        <!--verify-icon-------->
-                        <i class="verify fas fa-check-circle"></i>
-                        <!--heart-btn--------------->
-                        <input class="heart-btn" id="heart-btn" type="checkbox" />
-                        <label class="heart"></label>
-                    </div>
-                    <!--img and details---------------->
-                    <div class="details">
-                        <img alt="" src="main-images/Khang.jpg" />
-                        <strong>Khang Nguyen</strong>
-                        <p>1959009 - 19BIT2</p>
-                    </div>
-                    <!--view-btns------------------->
-                    <div class="button">
-                        <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
-                        <a href="#"><i class="fas fa-eye"></i>View</a>
-                    </div>
-                </div>
-                <!--box-2----------->
-                <div class="box">
-                    <!--top-bar---------------->
-                    <div class="top-bar"></div>
-                    <!--nav------------->
-                    <div class="nav">
-                        <!--verify-icon-------->
-                        <i class="verify fas fa-check-circle"></i>
-                        <!--heart-btn--------------->
-                        <input class="heart-btn" id="heart-btn2" type="checkbox" />
-                        <label class="heart"></label>
-                    </div>
-                    <!--img and details---------------->
-                    <div class="details">
-                        <img alt="" src="main-images/Linh.jpg" />
-                        <strong>Linh Vo</strong>
-                        <p>1959013 - 19BIT2</p>
-                    </div>
-                    <!--view-btns------------------->
-                    <div class="button">
-                        <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
-                        <a href="#"><i class="fas fa-eye"></i>View</a>
-                    </div>
-                </div>
-                <!--box-3----------->
-                <div class="box">
-                    <!--top-bar---------------->
-                    <div class="top-bar"></div>
-                    <!--nav------------->
-                    <div class="nav">
-                        <!--verify-icon-------->
-                        <i class="verify fas fa-check-circle"></i>
-                        <!--heart-btn--------------->
-                        <input class="heart-btn" id="heart-btn3" type="checkbox" />
-                        <label class="heart"></label>
-                    </div>
-                    <!--img and details---------------->
-                    <div class="details">
-                        <img alt="" src="main-images/Minh.png" />
-                        <strong>Minh Truong</strong>
-                        <p>1959018 - 19BIT2</p>
-                    </div>
-                    <!--view-btns------------------->
-                    <div class="button">
-                        <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
-                        <a href="#"><i class="fas fa-eye"></i>View</a>
-                    </div>
-                </div>
-                <!--box-4----------->
-                <div class="box">
-                    <!--top-bar---------------->
-                    <div class="top-bar"></div>
-                    <!--nav------------->
-                    <div class="nav">
-                        <!--verify-icon-------->
-                        <i class="verify fas fa-check-circle"></i>
-                        <!--heart-btn--------------->
-                        <input class="heart-btn" id="heart-btn4" type="checkbox" />
-                        <label class="heart"></label>
-                    </div>
-                    <!--img and details---------------->
-                    <div class="details">
-                        <img alt="" src="main-images/Phuc.png"/>
-                        <strong>Phuc Tran</strong>
-                        <p>1959029 - 19BIT2</p>
-                    </div>
-                    <!--view-btns------------------->
-                    <div class="button">
-                        <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
-                        <a href="#"><i class="fas fa-eye"></i>View</a>
-                    </div>
-                </div>
+  <!--section areas-->
+  <section class="areas">
+    <h5 class="heading container">Let's give it a try</h5>
+    <div class="container-fluid">
+      <div class="row my-5">
+        <div class="col-sm">
+          <img src="main-images/language.png" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Languages
             </div>
-        </section>
-
-        <!--section app-->
-        <section class="get-app">
-            <div class="container">
-                <h2 class="heading">Take our game with you</h2>
-                
-                <ul>
-                    <li><img src="main-images/appstore.svg" alt=""></li>
-                    <li><img src="main-images/ggplay.png" alt=""></li>
-                </ul>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="main-images/science.jpg" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Science
             </div>
-        </section>
-
-        <section class="end">
-            <div class="slider">
-                <input type="radio" name="slider" checked="checked">
-                <div class="imgBx">
-                    <img src="main-images/end1.jpg" alt="">
-                    <div class="end-content">
-                        <h2>Letters is for</h2>
-                        <p>“ <em>Tonight I work, so tomorrow I can go places</em>” students</p>
-                        <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i>  Scrambles</a>
-                        <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i>  HangMan</a>
-                    </div>
-                </div>
-                <input type="radio" name="slider">
-                <div class="imgBx">
-                    <img src="main-images/end2.jpg" alt="">
-                    <div class="end-content">
-                        <h2>Letters is for</h2>
-                        <p>“ <em>I’ll sleep when exams are over</em>” students</p>
-                        <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i>  Scrambles</a>
-                        <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i>  HangMan</a>
-                    </div>
-                </div>
-                <input type="radio" name="slider">
-                <div class="imgBx">
-                    <img src="main-images/end3.jpg" alt="">
-                    <div class="end-content">
-                        <h2>Letters is for</h2>
-                        <p>“ <em>Get through exams to get to vacation</em>” students</p>
-                        <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i>  Scrambles</a>
-                        <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i>  HangMan</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="main-images/arts&humanities.png" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Arts and Humanities
             </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="page-footer font-small primary-color-dark pt-4">
-
-            <!-- Footer Elements -->
-            <div class="container">
-        
-            <!-- Social buttons -->
-                <ul class="list-unstyled list-inline text-center mb-3">
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-fb mx-1">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-tw mx-1">
-                            <i class="fab fa-twitter"> </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-gplus mx-1">
-                            <i class="fab fa-google-plus-g"> </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-li mx-1">
-                            <i class="fab fa-linkedin-in"> </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-dribbble mx-1">
-                            <i class="fab fa-instagram"> </i>
-                        </a>
-                    </li>
-                </ul>
-            <!-- Social buttons -->
-        
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-sm">
+          <img src="main-images/maths.jpg" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Maths
             </div>
-            <!-- Footer Elements -->
-        
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2021 Copyright:
-                <a href="#"> Letters</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="main-images/socialscience.jpg" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Social Science
             </div>
-            <!-- Copyright -->
-        
-        </footer>
-        <!-- Footer -->
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="main-images/other.png" class="img-fluid image__img" alt="">
+          <div class="image-overlay">
+            <div class="image-title">
+              Other
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!--===== GSAP =====-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!--section team-->
+  <section class="team">
+    <h5 class="heading container">Meet Our Team</h5>
+    <div class="our-team">
+      <!--box-1----------->
+      <div class="box">
+        <!--top-bar---------------->
+        <div class="top-bar"></div>
+        <!--nav------------->
+        <div class="nav">
+          <!--verify-icon-------->
+          <i class="verify fas fa-check-circle"></i>
+          <!--heart-btn--------------->
+          <input class="heart-btn" id="heart-btn" type="checkbox" />
+          <label class="heart"></label>
+        </div>
+        <!--img and details---------------->
+        <div class="details">
+          <img alt="" src="main-images/Khang.jpg" />
+          <strong>Khang Nguyen</strong>
+          <p>1959009 - 19BIT2</p>
+        </div>
+        <!--view-btns------------------->
+        <div class="button">
+          <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+          <a href="#"><i class="fas fa-eye"></i>View</a>
+        </div>
+      </div>
+      <!--box-2----------->
+      <div class="box">
+        <!--top-bar---------------->
+        <div class="top-bar"></div>
+        <!--nav------------->
+        <div class="nav">
+          <!--verify-icon-------->
+          <i class="verify fas fa-check-circle"></i>
+          <!--heart-btn--------------->
+          <input class="heart-btn" id="heart-btn2" type="checkbox" />
+          <label class="heart"></label>
+        </div>
+        <!--img and details---------------->
+        <div class="details">
+          <img alt="" src="main-images/Linh.jpg" />
+          <strong>Linh Vo</strong>
+          <p>1959013 - 19BIT2</p>
+        </div>
+        <!--view-btns------------------->
+        <div class="button">
+          <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+          <a href="#"><i class="fas fa-eye"></i>View</a>
+        </div>
+      </div>
+      <!--box-3----------->
+      <div class="box">
+        <!--top-bar---------------->
+        <div class="top-bar"></div>
+        <!--nav------------->
+        <div class="nav">
+          <!--verify-icon-------->
+          <i class="verify fas fa-check-circle"></i>
+          <!--heart-btn--------------->
+          <input class="heart-btn" id="heart-btn3" type="checkbox" />
+          <label class="heart"></label>
+        </div>
+        <!--img and details---------------->
+        <div class="details">
+          <img alt="" src="main-images/Minh.png" />
+          <strong>Minh Truong</strong>
+          <p>1959018 - 19BIT2</p>
+        </div>
+        <!--view-btns------------------->
+        <div class="button">
+          <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+          <a href="#"><i class="fas fa-eye"></i>View</a>
+        </div>
+      </div>
+      <!--box-4----------->
+      <div class="box">
+        <!--top-bar---------------->
+        <div class="top-bar"></div>
+        <!--nav------------->
+        <div class="nav">
+          <!--verify-icon-------->
+          <i class="verify fas fa-check-circle"></i>
+          <!--heart-btn--------------->
+          <input class="heart-btn" id="heart-btn4" type="checkbox" />
+          <label class="heart"></label>
+        </div>
+        <!--img and details---------------->
+        <div class="details">
+          <img alt="" src="main-images/Phuc.png" />
+          <strong>Phuc Tran</strong>
+          <p>1959029 - 19BIT2</p>
+        </div>
+        <!--view-btns------------------->
+        <div class="button">
+          <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+          <a href="#"><i class="fas fa-eye"></i>View</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-    </body>
+  <!--section app-->
+  <section class="get-app">
+    <div class="container">
+      <h2 class="heading">Take our game with you</h2>
+
+      <ul>
+        <li><img src="main-images/appstore.svg" alt=""></li>
+        <li><img src="main-images/ggplay.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="end">
+    <div class="slider">
+      <input type="radio" name="slider" checked="checked">
+      <div class="imgBx">
+        <img src="main-images/end1.jpg" alt="">
+        <div class="end-content">
+          <h2>Letters is for</h2>
+          <p>“ <em>Tonight I work, so tomorrow I can go places</em>” students</p>
+          <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i> Scrambles</a>
+          <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i> HangMan</a>
+        </div>
+      </div>
+      <input type="radio" name="slider">
+      <div class="imgBx">
+        <img src="main-images/end2.jpg" alt="">
+        <div class="end-content">
+          <h2>Letters is for</h2>
+          <p>“ <em>I’ll sleep when exams are over</em>” students</p>
+          <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i> Scrambles</a>
+          <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i> HangMan</a>
+        </div>
+      </div>
+      <input type="radio" name="slider">
+      <div class="imgBx">
+        <img src="main-images/end3.jpg" alt="">
+        <div class="end-content">
+          <h2>Letters is for</h2>
+          <p>“ <em>Get through exams to get to vacation</em>” students</p>
+          <a href="game.html" class="btn btn-dark btn-lg play"><i class="fas fa-play"></i> Scrambles</a>
+          <a href="hangmanthegame/hangman.html" class="btn btn-outline-light btn-lg play"><i class="fas fa-play"></i> HangMan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small primary-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center mb-3">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="#"> Letters</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!--===== GSAP =====-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="main.js"></script>
+</body>
+
 </html>
