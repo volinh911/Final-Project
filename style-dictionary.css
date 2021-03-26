@@ -1,62 +1,71 @@
-
-.empty{
+.empty {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.empty-2{
+
+.empty-2 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-dict{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-.box-container{
-    border: 3px solid #0f3850;
+
+.footer-dict {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
-#search:hover{
-    text-decoration: underline;
-}
-.dictionary{
-    background: #0f3850;
-}
-.thesaurus{
-    background: #833a00;
-}
-.loading{
-    display: none;
-}
-.loading-syn{
-    display: none;
+.box-container {
+  border: 3px solid #0f3850;
 }
 
-.data p.def{
-    font-size: 20px;
-    color: #2D3748;
-    line-height: 1.6;
+#search:hover {
+  text-decoration: underline;
 }
-.suggested{
-    background: #ffdc62;
-    color: black;
-    padding: 2px 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-right: 10px;
-    display: inline-block;
+
+.dictionary {
+  background: #0f3850;
 }
-.synonym-words{
-    background: #ffdc62;
-    color: black;
-    padding: 2px 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-right: 10px;
-    display: inline-block;
+
+.thesaurus {
+  background: #833a00;
 }
+
+.loading {
+  display: none;
+}
+
+.loading-syn {
+  display: none;
+}
+
+.data p.def {
+  font-size: 20px;
+  color: #2D3748;
+  line-height: 1.6;
+}
+
+.suggested {
+  background: #ffdc62;
+  color: black;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.synonym-words {
+  background: #ffdc62;
+  color: black;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .audio {
-    margin-top: 20px;
+  margin-top: 20px;
 }

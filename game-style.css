@@ -1,246 +1,250 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-    width: 100%;
-    height: 15vh;
-    background-color: #20bf6b;
+  width: 100%;
+  height: 15vh;
+  background-color: #20bf6b;
 }
 
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    line-height: 15vh;
-    text-shadow: 10px 10px 3px #2b3d8b, 0px 4px 0 #2b3d8b, 0px 10px 3px rgb(0 0 0 / 10%)
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  line-height: 15vh;
+  text-shadow: 10px 10px 3px #2b3d8b, 0px 4px 0 #2b3d8b, 0px 10px 3px rgb(0 0 0 / 10%)
 }
 
 h2 {
-    font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
 h3 {
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 input {
-    width: 40%;
-    padding: 15px 0;
-    text-align: center;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    background-color: #dff9fb;
-    color: #000;
-    margin: 2rem 0;
-    font-size: 1.5rem !important;
+  width: 40%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #dff9fb;
+  color: #000;
+  margin: 2rem 0;
+  font-size: 1.5rem !important;
 }
 
 button {
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-    border: #2f3542;
-    text-decoration: none;
-    color: #eb4d4b;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: #2f3542;
+  text-decoration: none;
+  color: #eb4d4b;
 }
 
 button.btn {
-    font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: 0.12rem;
-    word-spacing: 0.19rem;
-    padding: 0.8rem 2.5rem;
-    background: white;
-    color: #2f3542;
-    text-transform: uppercase;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.12rem;
+  word-spacing: 0.19rem;
+  padding: 0.8rem 2.5rem;
+  background: white;
+  color: #2f3542;
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
 }
 
 button.btn:hover {
-    letter-spacing: 0.2rem;
-    word-spacing: 0.3rem;
-    background: #2f3542;
-    color: #dff9fb;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+  background: #2f3542;
+  color: #dff9fb;
 }
 
 body {
-    /* background: #9caaeb !important; */
+  /* background: #9caaeb !important; */
 }
 
 .l-header {
-    height: 170px;
+  height: 170px;
 }
 
 #main-box {
-    height: 74.7vh;
+  height: 74.7vh;
 }
 
 .stats-box {
-    height: fit-content;
-    margin-top: 170px;
+  height: fit-content;
+  margin-top: 170px;
 }
 
 .stats-box h2 {
-    letter-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .stats-box #score-text {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .stats-box .score {
-    margin-right: 0px;
-    display: flex;
-    margin-left: auto;
+  margin-right: 0px;
+  display: flex;
+  margin-left: auto;
 }
 
 .stats-box button#restart {
-    margin-right: 0px;
-    margin-left: auto;
-    padding: 8px !important;
+  margin-right: 0px;
+  margin-left: auto;
+  padding: 8px !important;
 }
 
 .white-transparent {
-    background: #ffffffb8;
+  background: #ffffffb8;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .game-box {
-    width: 75%;
-    height: 500px;
-    margin-top: 50px;
-    padding: 20px 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #4257b2f6;
-    flex-direction: column;
-    box-shadow: 0px 8px 6px -6px #380c46;
+  width: 75%;
+  height: 500px;
+  margin-top: 50px;
+  padding: 20px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #4257b2f6;
+  flex-direction: column;
+  box-shadow: 0px 8px 6px -6px #380c46;
 }
 
 h1#title {
-    font-weight: 400;
-    font-size: 3.5rem;
-    letter-spacing: 32px;
+  font-weight: 400;
+  font-size: 3.5rem;
+  letter-spacing: 32px;
 }
 
 .mode-btn {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .msg-box {
-    text-align: center;
-    font-size: 3.5rem;
+  text-align: center;
+  font-size: 3.5rem;
 }
 
 .score h2 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .score {
-    font-size: 2.5rem !important;
-    font-weight: 800 !important;
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
 }
 
 #spaghetti {
-    font-size: 4rem;
-    margin: 0px;
-    padding: 0px 30px;
+  font-size: 4rem;
+  margin: 0px;
+  padding: 0px 30px;
 }
 
-
 /* ====================================== BUNCH OF STUFFS ================================ */
-
 .main-box {
-    background: #9caaeb;
+  background: #9caaeb;
 }
 
 .spence {
-    background: url(./main-images/suspence.jpg);
-    background-repeat: repeat;
-    background-position: top;
+  background: url(./main-images/suspence.jpg);
+  background-repeat: repeat;
+  background-position: top;
 }
 
 .cake {
-    background: url(./main-images/cakeknight.jpg);
-    background-size: contain;
-    background-position: center;
+  background: url(./main-images/cakeknight.jpg);
+  background-size: contain;
+  background-position: center;
 }
 
 .rainbow {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 32px;
-    font-family: monospace;
-    letter-spacing: 5px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
 }
 
 .rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-    text-shadow: 4px 4px 0px #0000002e, 10px 10px 3px rgb(0 0 0 / 11%);
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  text-shadow: 4px 4px 0px #0000002e, 10px 10px 3px rgb(0 0 0 / 11%);
 }
 
 @keyframes rainbow_animation {
-    0%,
-    100% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 0;
-    }
+
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
 }
 
-
 /* ====================================================================== */
-
 @media screen and (max-aspect-ratio: 11/9) {
-    .gm.d-flex.flex-col {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-    }
-    .stats-box.d-flex {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-    .stats-box .score {
-        margin-right: auto;
-        margin-left: auto;
-    }
+  .gm.d-flex.flex-col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-box.d-flex {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .stats-box .score {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-aspect-ratio: 9/13) {
-    h1#title {
-        font-size: 3rem;
-        letter-spacing: 20px;
-    }
-    .l-header {
-        height: 130px;
-    }
-    .stats-box {
-        margin-top: 140px;
-    }
-    .game-box {
-        height: 700px;
-    }
-    #main-box {
-        height: 95vh;
-    }
+  h1#title {
+    font-size: 3rem;
+    letter-spacing: 20px;
+  }
+
+  .l-header {
+    height: 130px;
+  }
+
+  .stats-box {
+    margin-top: 140px;
+  }
+
+  .game-box {
+    height: 700px;
+  }
+
+  #main-box {
+    height: 95vh;
+  }
 }
