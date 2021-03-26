@@ -1,6 +1,6 @@
 # Final-Project
- Final Project for Web Development Course
- - Nguyen Phu Khang - 1959009
- - Vo Thuy Linh - 1959013
- - Truong Ngoc Quang Minh - 1959018
- - Tran Hoang Phuc - 1959029
+ Final Project for Web Development Course HCMUS - ITEC - AUT
+ - Nguyen Phu Khang - 1959009 - 19BIT2
+ - Vo Thuy Linh - 1959013 - 19BIT2
+ - Truong Ngoc Quang Minh - 1959018 - 19BIT2
+ - Tran Hoang Phuc - 1959029 - 19BIT2
